@@ -5,10 +5,10 @@ from contextlib import contextmanager
 
 from taming.modules.vqvae.quantize import VectorQuantizer2 as VectorQuantizer
 
-from stablediffusion.ldm.modules.diffusionmodules.model import Encoder, Decoder
-from stablediffusion.ldm.modules.distributions.distributions import DiagonalGaussianDistribution
+from illustration_generation.stablediffusion.ldm.modules.diffusionmodules.model import Encoder, Decoder
+from illustration_generation.stablediffusion.ldm.modules.distributions.distributions import DiagonalGaussianDistribution
 
-from stablediffusion.ldm.util import instantiate_from_config
+from illustration_generation.stablediffusion.ldm.util import instantiate_from_config
 
 
 class VQModel(pl.LightningModule):

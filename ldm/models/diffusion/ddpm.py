@@ -18,7 +18,7 @@ from tqdm import tqdm
 from torchvision.utils import make_grid
 from pytorch_lightning.utilities.distributed import rank_zero_only
 
-from stablediffusion.ldm.util import (
+from illustration_generation.stablediffusion.ldm.util import (
     log_txt_as_img,
     exists,
     default,
@@ -28,18 +28,18 @@ from stablediffusion.ldm.util import (
     count_params,
     instantiate_from_config,
 )
-from stablediffusion.ldm.modules.ema import LitEma
-from stablediffusion.ldm.modules.distributions.distributions import (
+from illustration_generation.stablediffusion.ldm.modules.ema import LitEma
+from illustration_generation.stablediffusion.ldm.modules.distributions.distributions import (
     normal_kl,
     DiagonalGaussianDistribution,
 )
-from stablediffusion.ldm.models.autoencoder import VQModelInterface, IdentityFirstStage, AutoencoderKL
-from stablediffusion.ldm.modules.diffusionmodules.util import (
+from illustration_generation.stablediffusion.ldm.models.autoencoder import VQModelInterface, IdentityFirstStage, AutoencoderKL
+from illustration_generation.stablediffusion.ldm.modules.diffusionmodules.util import (
     make_beta_schedule,
     extract_into_tensor,
     noise_like,
 )
-from stablediffusion.ldm.models.diffusion.ddim import DDIMSampler
+from illustration_generation.stablediffusion.ldm.models.diffusion.ddim import DDIMSampler
 
 
 __conditioning_keys__ = {"concat": "c_concat", "crossattn": "c_crossattn", "adm": "y"}

@@ -19,7 +19,7 @@ from taming.data.imagenet import (
 )
 from taming.data.imagenet import ImagePaths
 
-from stablediffusion.ldm.modules.image_degradation import degradation_fn_bsr, degradation_fn_bsr_light
+from illustration_generation.stablediffusion.ldm.modules.image_degradation import degradation_fn_bsr, degradation_fn_bsr_light
 
 
 def synset2idx(path_to_yaml="data/index_synset.yaml"):

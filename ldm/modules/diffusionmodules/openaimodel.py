@@ -8,7 +8,7 @@ import torch as th
 import torch.nn as nn
 import torch.nn.functional as F
 
-from stablediffusion.ldm.modules.diffusionmodules.util import (
+from illustration_generation.stablediffusion.ldm.modules.diffusionmodules.util import (
     checkpoint,
     conv_nd,
     linear,
@@ -17,7 +17,7 @@ from stablediffusion.ldm.modules.diffusionmodules.util import (
     normalization,
     timestep_embedding,
 )
-from stablediffusion.ldm.modules.attention import SpatialTransformer
+from illustration_generation.stablediffusion.ldm.modules.attention import SpatialTransformer
 
 
 # dummy replace
